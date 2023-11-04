@@ -153,6 +153,7 @@ function cardClick(e){
         }
         let input = document.querySelector('.codeInput');
         let location = window.location.host
+        location = location[location.length-1] == '/' ? location.slice(0,-1) : location
         let url = `${location}?${code}`
         input.value = url;
         if (unflipped.length == 0){
