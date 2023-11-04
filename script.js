@@ -1,4 +1,5 @@
 function onload(){    
+    document.querySelector('.loading').remove();
     document.addEventListener('mousemove', mousemove);
     let code = getURLCode();
     if (code){

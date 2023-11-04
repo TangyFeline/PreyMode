@@ -482,3 +482,12 @@ button:hover {
         position:absolute;        
     }
 }
+p.loading{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    font-family:'Amatic SC', Helvetica;
+    font-size: 2em;
+}
