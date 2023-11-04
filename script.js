@@ -152,8 +152,7 @@ function cardClick(e){
             code += challengeToCode(challenge.difficulty, challenge.index)
         }
         let input = document.querySelector('.codeInput');
-        let location = window.location.host
-        location = location[location.length-1] == '/' ? location.slice(0,-1) : location
+        let location = window.location.host;        
         let url = `${location}?${code}`
         input.value = url;
         if (unflipped.length == 0){
