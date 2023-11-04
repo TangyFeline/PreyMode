@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prey Mode</title>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js"></script>
+    <script src="constants.js"></script>
+    <script src="tests.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans&family=Handlee&family=Playpen+Sans&display=swap" rel="stylesheet">
+</head>
+<body onLoad="onload()">
+    <nav>
+        <ul>
+            <li class="first"><a href="./index.html">What is this?</a></li>
+            <li><a href="./all.html">Deck</a></li>
+            <li><a target="_blank" href="https://docs.google.com/forms/d/170ro0WEpzEPpuN0okgSjDud9aB_0ykGCcdnPCqWOTFk/viewform">Contribute</a></li>
+        </ul>
+    </nav>
+    <section class="bg">
+        <div class="bgoverlay"></div>
+        <div class="introcontainer hide">
+            <div class="page">
+                <div class="heroimgcontainer">
+                    <img src="hero.png" alt="">
+                </div>
+                <h1>Welcome to Prey Mode!</h1>
+                <p>Is Hard Mode too easy for you? Are you looking for an even greater challenge? Do you secretly want to be an item but are too talented to ever lose to anyone? Click the button below to roll up some restrictions to follow for your next round.</p>
+                <p>All restrictions assume you are in hard mode. You did want a bigger challenge, right?</p>
+                <button onclick="startHere();">Draw Your Cards</button>
+            </div>
+        </div>
+        <div class="container lower">
+            <div class="cardcontainer hide" id="cardtemplate">
+                <div class="card">
+                    <div class="cardinner">
+                        <div class="front cardarea"></div>
+                        <div class="back cardarea">                                                                        
+                            <div class="cardborder"></div>
+                            <div class="cardbackground"></div>
+                            <div class="art">
+                                <img class='arttarget'>
+                            </div>
+                            <div class="header">
+                                <h1 class="nametext">Lorem Ipsum</h1>
+                            </div>
+                            <div class="bottom">
+                                <p class="desctext">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                            
+                            </div>
+                            <div class="headline">
+                                <div class="difficulty">
+                                    <div class="occlude"></div>
+                                    <span class="difficultytext">Easy</span>
+                                    <div class="difficultybackground"></div>
+                                </div>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="info hide">
+            <div class="infobubble">
+                <p>Copy the below and add it to your bio!</p>            
+                <input type="text" class="codeInput" />
+            </div>
+        </div>
+        </div>
+       <div class="aidisclaimer">All images on this site are AI-generated. I'm no artist.</div>
+    </section>    
+</body>
+</html>

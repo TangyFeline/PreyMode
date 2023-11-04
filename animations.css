@@ -1,0 +1,149 @@
+@keyframes roam {
+    0%{
+        background-position: 0 0;
+    }
+    30%{
+        background-position: 50% 50%;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 65% 80%;
+    }
+}
+@keyframes flash {
+    0%, 100%{
+        filter: brightness(0.5) sepia(1) hue-rotate(147deg);
+    }
+    50%{
+        filter: brightness(0.7) sepia(1) hue-rotate(147deg) drop-shadow(0px 0px 5px var(--bright));
+    }
+}
+@keyframes yellow-flash {
+    50%{
+        filter: brightness(0.7) sepia(1) hue-rotate(11deg) drop-shadow(0px 0px 5px #e3ff24);
+    }
+    100%{
+        filter: brightness(0.5) sepia(1) hue-rotate(11deg);
+    }
+}
+@keyframes orange-flash {
+    50%{
+        filter: brightness(0.7) sepia(1) hue-rotate(355deg) drop-shadow(0px 0px 5px #ffb545)
+    }
+    100%{
+        filter: brightness(0.5) sepia(1) hue-rotate(355deg);
+    }
+}
+@keyframes crimson-flash {
+    0%{
+        filter: brightness(0.5) sepia(1) hue-rotate(147deg);
+    }
+    50%{
+        filter: brightness(0.4) sepia(1) hue-rotate(314deg) drop-shadow(0px 0px 5px #bb0000)
+    }
+    100%{
+        filter: brightness(0.4) sepia(1) hue-rotate(314deg)
+    }
+}
+@keyframes gold-flash {
+    50%{
+        filter: brightness(0.7) sepia(1) hue-rotate(2deg) drop-shadow(0px 0px 5px #f3ebaf)
+    }
+    100%{
+        filter: brightness(0.5) sepia(1) hue-rotate(2deg)
+    }
+}
+@keyframes border-flash{
+    50%{
+        filter: brightness(1.1) sepia(1) hue-rotate(147deg) drop-shadow(0px 0px 10px var(--bright))
+    }
+}
+@keyframes yellow-border-flash {
+    50%{
+        filter: brightness(1.1) sepia(1) hue-rotate(11deg) drop-shadow(0px 0px 5px #e3ff24);
+    }
+    100%{
+        filter: brightness(0.7) sepia(1) hue-rotate(11deg);
+    }
+}
+@keyframes orange-border-flash {
+    50%{
+        filter: brightness(0.9) sepia(1) hue-rotate(355deg) drop-shadow(0px 0px 5px #ffb545);
+    }
+    100%{
+        filter: brightness(0.7) sepia(1) hue-rotate(355deg);
+    }
+}
+@keyframes crimson-border-flash {
+    50%{
+        filter: brightness(0.5) sepia(1) hue-rotate(314deg) drop-shadow(0px 0px 5px #bb0000)
+    }
+    100%{
+        filter: brightness(0.5) sepia(1) hue-rotate(314deg);
+    }
+}
+@keyframes gold-border-flash {
+    50%{
+        filter: brightness(1.2) sepia(1) hue-rotate(2deg) drop-shadow(0px 0px 8px #f3ebaf)
+    }
+    100%{
+        filter: brightness(0.9) sepia(1) hue-rotate(2deg)
+    }
+}
+@keyframes text-flash{
+    0%, 100%{
+        color:var(--dull);
+    }
+    50%{
+        color: var(--bright);
+        text-shadow:0 0 5px #6ae6e6, 0 0 10px var(--bright);
+    }
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slide-open {
+    0%{
+        left:0;
+    }
+    100%{
+        left:100%;
+    }
+}
+@keyframes shrink-up{
+    0%{
+        opacity:1;
+    }
+    100%{
+        top:-65px;
+        opacity:1;
+    }
+}
+@keyframes fade-down{
+    0%{
+        opacity: 1;
+        top:0;
+    }
+    100%{
+        opacity: 0;
+        display:none;
+        top:50px;
+    }
+}
+@keyframes unfade-up{
+    0%{
+        opacity: 0;
+        top:50px
+    }
+    100%{
+        top:0;
+        opacity: 1;        
+    }
+}
