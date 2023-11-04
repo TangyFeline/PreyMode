@@ -490,4 +490,5 @@ p.loading{
     z-index: 3;
     font-family:'Amatic SC', Helvetica;
     font-size: 2em;
+    color: rgb(42 83 103 / 100%);
 }
